@@ -104,7 +104,7 @@ export const RESUME_DATA = {
       end: "2020",
       description: (
         <>
-          Achieved "Preferred Seller" status within first 5 months.
+          Achieved &#34;Preferred Seller&#34; status within first 5 months.
           <ul className="list-inside list-disc">
             <li>Maintained 5 star shop rating and good word of mouth reputaiton</li>
             <li>
