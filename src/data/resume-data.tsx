@@ -116,7 +116,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Sunzo Foundations Engineering",
-      link: "https://www.nokia.com",
+      link: "",
       badges: ["On Site", "Project Management"],
       title: "Project Engineer",
       start: "2016",
@@ -126,8 +126,8 @@ export const RESUME_DATA = {
     },
     {
       company: "Keppel Singmarine",
-      link: "https://www.nokia.com",
-      badges: ["Intern", "Autocad"],
+      link: "https://www.keppel.com/",
+      badges: ["Intern", "AutoCAD"],
       title: "Engineer",
       start: "2016",
       end: "2016",

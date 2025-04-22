@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { Mail, Phone, MapPin, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -18,7 +18,7 @@ function LocationLink({ location, locationLink }: LocationLinkProps) {
         rel="noopener noreferrer"
         aria-label={`Location: ${location}`}
       >
-        <GlobeIcon className="size-3" aria-hidden="true" />
+        <MapPin className="size-3" aria-hidden="true" />
         {location}
       </a>
     </p>
@@ -61,21 +61,21 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
       {personalWebsiteUrl && (
         <SocialButton
           href={personalWebsiteUrl}
-          icon={GlobeIcon}
+          icon={Globe}
           label="Personal website"
         />
       )}
       {contact.email && (
         <SocialButton
           href={`mailto:${contact.email}`}
-          icon={MailIcon}
+          icon={Mail}
           label="Email"
         />
       )}
       {contact.tel && (
         <SocialButton
           href={`tel:${contact.tel}`}
-          icon={PhoneIcon}
+          icon={Phone}
           label="Phone"
         />
       )}
