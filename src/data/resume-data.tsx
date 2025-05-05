@@ -17,7 +17,7 @@ export const RESUME_DATA = {
   avatarUrl: "https://raw.githubusercontent.com/Bicheng-G/assets/main/assets/avatar.jpg",
   personalWebsiteUrl: "https://bicheng.me",
   contact: {
-    email: "bicheng.gu@yahoo.com",
+    email: "hi@bicheng.me",
     tel: "+65 85882413",
     social: [
       {
