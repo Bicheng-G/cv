@@ -1,4 +1,5 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export const RESUME_DATA = {
   name: "Bicheng Gu",
@@ -18,8 +19,12 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://bicheng.me",
   contact: {
     email: "hi@bicheng.me",
-    tel: "+65 85882413",
     social: [
+      {
+        name: "WhatsApp",
+        url: "https://wa.me/6585882413?text=Hi%20Bicheng%2C%20I%20saw%20your%20resume%20and%20..",
+        icon: WhatsAppIcon,
+      },
       {
         name: "GitHub",
         url: "https://github.com/Bicheng-G",
@@ -172,17 +177,17 @@ export const RESUME_DATA = {
         "Platform for online consultations with real-time video meetings and scheduling",
       link: {
         label: "consultly.com",
-        href: "https://consultly.com/",
+        href: "",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Boke Tools Repair Portal",
+      techStack: ["Vibe Coding", "Supabase", "Requirement Gathering"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "An internal tool for Boke Tools to manage repair requests and track the progress of repairs.",
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "Boke Tools Repair Portal",
+        href: "https://boke-repair-dep.vercel.app/",
       },
     },
   ],

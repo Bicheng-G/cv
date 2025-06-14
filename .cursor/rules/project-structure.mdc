@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Structure Guide
+
+This is a Next.js-based personal CV website. Here's a guide to the key files in this project:
+
+-   **Resume Data**: All the personal information, work experience, education, and project details are stored in a single file: [`src/data/resume-data.tsx`](mdc:src/data/resume-data.tsx). To update the content of the CV, you should edit this file.
+
+-   **Main Page**: The main user interface of the CV is rendered by [`src/app/page.tsx`](mdc:src/app/page.tsx). This file imports data from `resume-data.tsx` and uses components to display it.
+
+-   **Global Styles**: The global cascading style sheets are defined in [`src/app/globals.css`](mdc:src/app/globals.css).
+
+-   **Reusable Components**: The project uses reusable React components which are located in the [`src/components/`](mdc:src/components) directory.
+
+-   **Layout**: The main layout of the application is in [`src/app/layout.tsx`](mdc:src/app/layout.tsx).
