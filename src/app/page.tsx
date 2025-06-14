@@ -1,4 +1,3 @@
-import { CommandMenu } from "@/components/command-menu";
 import { RESUME_DATA } from "@/data/resume-data";
 import { WorkExperience } from "./components/WorkExperience";
 import { Projects } from "./components/Projects";
@@ -6,6 +5,12 @@ import { Education } from "./components/Education";
 import { Summary } from "./components/Summary";
 import { Skills } from "./components/Skills";
 import { Header } from "./components/Header";
+import dynamic from "next/dynamic";
+
+const CommandMenu = dynamic(
+  () => import("@/components/command-menu").then((mod) => mod.CommandMenu),
+  { ssr: false },
+);
 
 /**
  * Transform social links for command menu

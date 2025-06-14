@@ -15,7 +15,7 @@ export const RESUME_DATA = {
       Dedicated to delivering innovative solutions and fostering strong client relationships in a fast-paced environment.
     </>
   ),
-  avatarUrl: "https://raw.githubusercontent.com/Bicheng-G/assets/main/assets/avatar.jpg",
+  avatarUrl: "/avatar.jpg",
   personalWebsiteUrl: "https://bicheng.me",
   contact: {
     email: "hi@bicheng.me",

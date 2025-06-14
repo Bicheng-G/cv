@@ -1,7 +1,7 @@
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { RESUME_DATA } from "@/data/resume-data";
+import { AvatarClient } from "./AvatarClient";
 
 interface LocationLinkProps {
   location: typeof RESUME_DATA.location;
@@ -154,13 +154,7 @@ export function Header() {
         />
       </div>
 
-      <Avatar className="size-28" aria-hidden="true">
-        <AvatarImage
-          alt={`${RESUME_DATA.name}'s profile picture`}
-          src={RESUME_DATA.avatarUrl}
-        />
-        <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-      </Avatar>
+      <AvatarClient />
     </header>
   );
 }
