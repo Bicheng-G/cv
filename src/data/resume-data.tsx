@@ -90,7 +90,7 @@ export const RESUME_DATA = {
               Fostered strong relationships with the clients and the tender team
             </li>
             <li>
-              Led the project for client's next generation solution
+              Led the project for client&apos;s next generation solution
             </li>
           </ul>
         </>
