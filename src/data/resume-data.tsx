@@ -76,6 +76,27 @@ export const RESUME_DATA = {
       ),
     },
     {
+      company: "Soon Heng Taximeters Service",
+      link: "https://soonhengtaxi.com.sg",
+      badges: ["On Site", "Mobile Data Terminals", "Tenders"],
+      title: "Product Manager",
+      start: "2024",
+      end: null,
+      description: (
+        <>
+          As the product manager for the mobile data terminals, I was responsible for the product demostration and distribution.
+          <ul className="list-inside list-disc">
+            <li>
+              Fostered strong relationships with the clients and the tender team
+            </li>
+            <li>
+              Led the project for client's next generation solution
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       company: "Tagrain",
       link: "https://tagrain.com/",
       badges: ["Remote", "Go-to-market", "Product Management", "Lead Generation"],
@@ -162,21 +183,18 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Consultly",
+      title: "AI Toy",
       techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
+        "LLM",
+        "AI",
+        "Docker",
+        "Speech to Text",
+        "Text to Speech",
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Designed to be \"First AI Friend who Listens & Grows.\" The toy connects with children through engaging and interactive AI-powered conversations",
       link: {
-        label: "consultly.com",
+        label: "AI Toy",
         href: "",
       },
     },
