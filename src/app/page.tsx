@@ -16,7 +16,7 @@ const CommandMenu = dynamic(
  * Transform social links for command menu
  */
 function getCommandMenuLinks() {
-  const links = [];
+  const links: { url: string; title: string }[] = [];
 
   if (RESUME_DATA.personalWebsiteUrl) {
     links.push({
@@ -24,6 +24,24 @@ function getCommandMenuLinks() {
       title: "Personal Website",
     });
   }
+
+  // Add external "Projects" page link displayed in the Projects section
+  links.push({
+    url: "https://bicheng.me/projects",
+    title: "Projects",
+  });
+
+  // Optionally surface each individual project link defined in the resume data
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // Cast via unknown to silence readonly tuple type complaint
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const projectsAny = RESUME_DATA.projects as unknown as any[];
+  projectsAny.forEach((project) => {
+    if (project?.link?.href) {
+      links.push({ url: project.link.href, title: project.title ?? project.link.label ?? "Project" });
+    }
+  });
 
   return [
     ...links,

@@ -172,7 +172,7 @@ export const RESUME_DATA = {
     "Lead Generation",
   ],
   projects: [
-    {
+/*     {
       title: "Duke",
       techStack: ["Java", "Gradle", "JUnit"],
       description:
@@ -207,6 +207,6 @@ export const RESUME_DATA = {
         label: "Boke Tools Repair Portal",
         href: "https://boke-repair-dep.vercel.app/",
       },
-    },
+    }, */
   ],
 } as const;
