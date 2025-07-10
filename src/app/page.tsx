@@ -32,14 +32,15 @@ function getCommandMenuLinks() {
   });
 
   // Optionally surface each individual project link defined in the resume data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // Cast via unknown to silence readonly tuple type complaint
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const projectsAny = RESUME_DATA.projects as unknown as any[];
-  projectsAny.forEach((project) => {
-    if (project?.link?.href) {
-      links.push({ url: project.link.href, title: project.title ?? project.link.label ?? "Project" });
+  type ProjectItem = { title?: string; link?: { href: string; label?: string } };
+  const projectItems = RESUME_DATA.projects as unknown as ProjectItem[];
+
+  projectItems.forEach((project) => {
+    if (project.link?.href) {
+      links.push({
+        url: project.link.href,
+        title: project.title ?? project.link.label ?? "Project",
+      });
     }
   });
 
