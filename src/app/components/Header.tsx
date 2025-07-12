@@ -32,13 +32,14 @@ interface SocialButtonProps {
 }
 
 function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
+  const isSameSite = href.startsWith("https://bicheng.me");
   return (
     <Button className="size-8" variant="outline" size="icon" asChild>
       <a
         href={href}
         aria-label={label}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={isSameSite ? "_self" : "_blank"}
+        rel={isSameSite ? undefined : "noopener noreferrer"}
       >
         <Icon className="size-4" aria-hidden="true" />
       </a>

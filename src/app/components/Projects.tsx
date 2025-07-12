@@ -176,8 +176,7 @@ export function Projects({ projects }: ProjectsProps) {
       <h2 className="text-xl font-bold flex items-center gap-1" id="side-projects">
         <a
           href="https://bicheng.me/projects"
-          target="_blank"
-          rel="noopener noreferrer"
+          target="_self"
           className="inline-flex items-center gap-1 underline decoration-gray-500/30 hover:decoration-gray-500/80 text-primary"
         >
           Projects

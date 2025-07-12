@@ -74,7 +74,9 @@ export const CommandMenu = ({ links }: Props) => {
                 key={url}
                 onSelect={() => {
                   setOpen(false);
-                  window.open(url, "_blank");
+                  // Open links from bicheng.me in the current tab, others in a new tab
+                  const isSameSite = url.startsWith("https://bicheng.me");
+                  window.open(url, isSameSite ? "_self" : "_blank");
                 }}
               >
                 <span>{title}</span>
